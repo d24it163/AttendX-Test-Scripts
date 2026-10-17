@@ -38,3 +38,9 @@ def test_invalid_password(driver):
     login(driver, "teacher01", "wrong")
     msg = driver.find_element(By.ID, "errorMsg").text
     assert "Invalid" in msg
+
+
+def test_empty_fields(driver):
+    login(driver, "", "")
+    msg = driver.find_element(By.ID, "errorMsg").text
+    assert "required" in msg.lower()
