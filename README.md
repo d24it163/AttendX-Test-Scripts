@@ -24,3 +24,4 @@ pytest attendance_test.py -v
 1. `git pull` before starting work
 2. Make changes, `git add`, `git commit -m "clear message"`
 3. `git push`
+Maintained by the AttendX QA team
